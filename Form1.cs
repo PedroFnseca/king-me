@@ -56,7 +56,6 @@ namespace king_me
 
             btnListarJogadores_Click(null, null);
 
-
         }
 
         private void btnCriarPartida_Click(object sender, EventArgs e)
@@ -83,5 +82,19 @@ namespace king_me
             txtJogadores.Text = KingMeServer.Jogo.ListarJogadores(int.Parse(id));
         }
 
+        private void btnIniciarPartida_Click(object sender, EventArgs e)
+        {
+            int idJogador = int.Parse(txtIdJogador.Text);
+            string senhaJogador = txtSenhaJogador.Text;
+            int id = int.Parse(txtIdPartida.Text);
+            string senha = txtSenhaPartida.Text;
+            
+            KingMeServer.Jogo.Iniciar(idJogador, senhaJogador);
+
+            txtPersonagensFav.Text = KingMeServer.Jogo.ListarCartas(idJogador, senhaJogador);
+
+        }
+
+     
     }
 }

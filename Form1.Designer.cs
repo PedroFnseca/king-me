@@ -55,6 +55,8 @@
             this.lblIdPartida = new System.Windows.Forms.Label();
             this.txtPersonagensFav = new System.Windows.Forms.TextBox();
             this.lblPersonagensFav = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnIniciarPartida = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // infoGame
@@ -326,7 +328,7 @@
             // 
             // txtPersonagensFav
             // 
-            this.txtPersonagensFav.Location = new System.Drawing.Point(404, 157);
+            this.txtPersonagensFav.Location = new System.Drawing.Point(405, 233);
             this.txtPersonagensFav.Multiline = true;
             this.txtPersonagensFav.Name = "txtPersonagensFav";
             this.txtPersonagensFav.Size = new System.Drawing.Size(145, 134);
@@ -335,17 +337,37 @@
             // lblPersonagensFav
             // 
             this.lblPersonagensFav.AutoSize = true;
-            this.lblPersonagensFav.Location = new System.Drawing.Point(402, 129);
+            this.lblPersonagensFav.Location = new System.Drawing.Point(401, 203);
             this.lblPersonagensFav.Name = "lblPersonagensFav";
             this.lblPersonagensFav.Size = new System.Drawing.Size(147, 16);
             this.lblPersonagensFav.TabIndex = 30;
             this.lblPersonagensFav.Text = "Personagens Favoritos";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(405, 138);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 16);
+            this.label1.TabIndex = 31;
+            // 
+            // btnIniciarPartida
+            // 
+            this.btnIniciarPartida.Location = new System.Drawing.Point(404, 136);
+            this.btnIniciarPartida.Name = "btnIniciarPartida";
+            this.btnIniciarPartida.Size = new System.Drawing.Size(134, 41);
+            this.btnIniciarPartida.TabIndex = 32;
+            this.btnIniciarPartida.Text = "Iniciar Partida";
+            this.btnIniciarPartida.UseVisualStyleBackColor = true;
+            this.btnIniciarPartida.Click += new System.EventHandler(this.btnIniciarPartida_Click);
             // 
             // KingMe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1135, 700);
+            this.Controls.Add(this.btnIniciarPartida);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblPersonagensFav);
             this.Controls.Add(this.txtPersonagensFav);
             this.Controls.Add(this.lblIdPartida);
@@ -410,6 +432,8 @@
         private System.Windows.Forms.Label lblIdPartida;
         private System.Windows.Forms.TextBox txtPersonagensFav;
         private System.Windows.Forms.Label lblPersonagensFav;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnIniciarPartida;
     }
 }
 
